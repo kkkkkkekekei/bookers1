@@ -1,0 +1,15 @@
+<%= notice %>
+<body>
+<div>
+<strong>Title:</strong> 
+<%= @book.title %>
+</div>
+
+<div>
+<strong>Body:</strong> 
+<%= @book.body %>
+</div>
+</body>
+<span><%= link_to "Edit", edit_book_path(@book.id) %></span>
+|
+<span><%= link_to "Back", "/books" %></span>
